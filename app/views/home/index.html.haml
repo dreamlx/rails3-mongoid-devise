@@ -1,0 +1,20 @@
+%h3 Home
+%ul
+  - if @instagrams.size > 0
+    - @instagrams.each do |item|
+      %li
+        %a{ herf: item.images.thumbnail.url }
+          = image_tag item.images.thumbnail.url
+        %span 
+          By
+          = item.user.username
+        %span 
+          Date
+          = item.created_time
+        %span
+          = item.comments.count
+          comment(s)
+        %span
+          = item.likes.count
+          likes 
+

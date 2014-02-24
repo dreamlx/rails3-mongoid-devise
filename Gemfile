@@ -1,4 +1,10 @@
 source 'https://rubygems.org'
+
+gem "koala", "~> 1.8.0rc1" #facebook api
+gem "instagram"
+gem 'haml'
+gem "pry"
+gem 'pry-rails'
 ruby '2.0.0'
 gem 'rails', '3.2.14'
 group :assets do

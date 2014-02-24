@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @users = User.all
+    @instagrams = Instagram.media_popular
+    #binding.pry
   end
 end
