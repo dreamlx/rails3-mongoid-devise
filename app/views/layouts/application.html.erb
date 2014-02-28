@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Rails3 Mongoid Devise" %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title><%= content_for?(:title) ? yield(:title) : "Video Show" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails3 Mongoid Devise" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
@@ -12,10 +12,10 @@
   <body class="<%= controller_name %> <%= action_name %>">
     <div id="container" class="container">
       <header>
-        <%= render 'layouts/navigation' %>
+        <%#= render 'layouts/navigation' %>
         <%= render 'layouts/messages' %>
       </header>
-      <div id="main" role="main">
+      <div id="main" role="main" class='container-fluid'>
         <%= yield %>
       </div>
       <footer>

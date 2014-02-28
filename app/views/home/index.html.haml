@@ -1,20 +1,22 @@
 %h3 Home
+%a{href: "/oauth/connect"}
+  Connect with Instagram
 %ul
   - if @instagrams.size > 0
     - @instagrams.each do |item|
       %li
         %a{ herf: item.images.thumbnail.url }
           = image_tag item.images.thumbnail.url
-        %span 
+        %div 
           By
           = item.user.username
-        %span 
+        %div 
           Date
           = item.created_time
-        %span
+        %div
           = item.comments.count
           comment(s)
-        %span
+        %div
           = item.likes.count
           likes 
 

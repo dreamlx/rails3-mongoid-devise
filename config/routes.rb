@@ -5,4 +5,12 @@ Rails3MongoidDevise::Application.routes.draw do
   root :to => "home#index"
   devise_for :users
   resources :users
+
+  namespace :api do
+    namespace :v1 do
+      get '/media/popular' => 'media#popular'
+      get '/oauth/connect' => 'oauth#connect'
+      get '/callback' => 'oauth#callback'
+    end
+  end
 end
