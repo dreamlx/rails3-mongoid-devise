@@ -4,8 +4,12 @@ Rails3MongoidDevise::Application.routes.draw do
   end
   root :to => "home#index"
   devise_for :users
-  resources :users 
-  get '/users/feed' => 'users#feed'
+  resources :users do
+    collection do
+      get :feed
+    end
+  end
+
 
   namespace :api do
     namespace :v1 do
