@@ -1,8 +1,12 @@
-source 'https://rubygems.org'
+source 'https://rubygems.org/'
+gem 'unicorn'
 gem 'rabl'
 gem 'oj'
 gem 'bootstrap-sass', '~> 3.1.1'
-gem 'capistrano', '~> 3.1.0'
+gem 'capistrano', '~> 3.1'
+gem 'capistrano-rails', '~> 1.1'
+gem 'capistrano-rvm'
+gem 'capistrano-bundler', '>= 1.1.0'
 gem "koala", "~> 1.8.0rc1" #facebook api
 gem "instagram"
 gem 'haml'
