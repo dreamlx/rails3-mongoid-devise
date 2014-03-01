@@ -3,14 +3,14 @@ lock '3.1.0'
 
 set :application, 'videoshow'
 
-set :rvm_type, :user                     # Defaults to: :auto
-set :rvm_ruby_version, 'ruby-2.0.0-p353@videoshow'      # Defaults to: 'default'
+set :rvm_type, :system                     # Defaults to: :auto
+#set :rvm_ruby_version, 'ruby-2.0.0-p353@videoshow'      # Defaults to: 'default'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
-# set :deploy_to, '/var/www/my_app'
+set :deploy_to, '/var/www/video_show'
 
 # Default value for :scm is :git
 set :scm, :git
@@ -26,7 +26,7 @@ set :repo_url, 'git@github.com:dreamlx/rails3-mongoid-devise.git'
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, %w{config/database.yml config/application.yml}
+#set :linked_files, %w{config/database.yml config/application.yml}
 
 # Default value for linked_dirs is []
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
