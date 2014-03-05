@@ -7,10 +7,10 @@
       %li
         %a{ herf: item.images.thumbnail.url }
           = image_tag item.images.thumbnail.url
-        %div 
+        %div
           By
           = item.user.username
-        %div 
+        %div
           Date
           = item.created_time
         %div
@@ -18,5 +18,5 @@
           comment(s)
         %div
           = item.likes.count
-          likes 
+          likes
 
