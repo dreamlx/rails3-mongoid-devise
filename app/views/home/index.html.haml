@@ -1,22 +1,9 @@
-%h3 Home
-%a{href: "/api/v1/oauth/connect"}
-  Connect with Instagram
-%ul
-  - if @instagrams.size > 0
-    - @instagrams.each do |item|
-      %li
-        %a{ herf: item.images.thumbnail.url }
-          = image_tag item.images.thumbnail.url
-        %div
-          By
-          = item.user.username
-        %div
-          Date
-          = item.created_time
-        %div
-          = item.comments.count
-          comment(s)
-        %div
-          = item.likes.count
-          likes
+%div{ data: { role: 'page' } }
+  %div{ data: {role: 'header'} } 
+    %h1 Home
+  .ui-content{role: 'main'}
+    %a{href: "/api/v1/oauth/connect", data: {role: 'button'}}
+      Connect with Instagram
+  %div{ data: { role: 'footer'}}
+
 

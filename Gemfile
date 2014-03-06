@@ -1,4 +1,6 @@
-source 'https://rubygems.org/'
+source 'http://ruby.taobao.org/'
+gem 'videojs_rails'
+gem 'jquery_mobile_rails'
 gem 'unicorn'
 gem 'rabl'
 gem 'oj'

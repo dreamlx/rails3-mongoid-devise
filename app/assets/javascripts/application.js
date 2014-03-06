@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require_tree .
 //= require bootstrap
+//= require jquery
+//= require jquery_ujs
+//= require jquery.mobile
+//= require video
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+    alert('scrolling');
+  });
+});
