@@ -18,9 +18,7 @@ class UsersController < ApplicationController
     @user = client.user
     respond_to do |format|
       format.html
-      format.json { 
-        render json: media: @medias.to_json
-      }
+      format.json { render json: @medias.to_json }
     end
   end
 
