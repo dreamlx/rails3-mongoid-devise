@@ -6,12 +6,11 @@
   .ui-content{role: 'main'}
     %ul{data: {role:"listview"}}
       - @medias.each do |m|
-        - uless m.video.blank?
-          %li
-            %div= videojs_rails sources: { mp4: m.videos.low_resolution.url }, height: '480'
-            %div
-              %span
-                likes= "(#{m.likes.count})"
-              %span
-                comments="(#{m.comments.count})"
+        %li
+          %div= videojs_rails sources: { mp4: m.videos.low_resolution.url }, height: '480', id: m.object_id
+          %div
+            %span
+              %h3 likes (#{m.likes.count})
+            %span
+              %h3 comments (#{m.comments.count})
   %div{ data: { role: 'footer'}}
