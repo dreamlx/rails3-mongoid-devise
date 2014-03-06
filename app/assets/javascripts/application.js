@@ -35,7 +35,7 @@ $(document).ready(function(){
 
       var top = $(window).scrollTop();
       console.log("windows:" + top + "||video" + voffset.top);
-      if (video.paused && (voffset.top > top) && (voffset.top < top + vouterheight/3) ) {
+      if ((voffset.top > top) && (voffset.top < top + vouterheight/3) ) {
         video.play();
       }else{
         video.pause();
